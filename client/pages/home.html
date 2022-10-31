@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/general.css">
+    <script src="../JS/index.js" type="module" defer></script>
+    <title>Need Jobs</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <ul class="navigation">
+                <li><button id="redirectHome">Need Jobs</button></li>
+                <li>
+                    <button class="profile-button" id="redirectAddJob">Add job</button>
+                    <button class="profile-button" id="redirectProfile">Profile</button>
+                    <img src="../src/icons/logout-icon.png" alt="logout icon" class="logout-icon" id="logout">
+                    <div class="profile-image">
+                        <img src="../src/images/profile-picture.jpeg" alt="Profile image">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="jobs-container">
+        </div>
+        <div class="job-description">
+            <div class="job-header">
+                <img src="../src/images/job-icon.jpg" alt="job icon" class="job-icon">
+                <div class="header-infos">
+                    <h5 class="company-name">Lorem company</h5>
+                    <h3 class="job-title" id="jobTitle">title</h3>
+                </div>
+                <div class="description-section">
+                    <div class="project-overview">
+                        <h5>Project Overview</h5>
+                        <p class="job-description-text" id="projectOverview">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Omnis eveniet, dolore beatae excepturi deserunt laboriosam architecto
+                            facere inventore maiores quos illo, voluptas cumque. Pariatur animi, repellat sapiente
+                            laboriosam suscipit iusto eum magnam accusamus doloribus atque.</p>
+                    </div>
+                    <div class="skills-required-section">
+                        <h5>Place</h5>
+                        <p class="skills" id="place">France</p>
+                        <h5>Wage</h5>
+                        <p class="skills" id="wage">45000</p>
+                        <h5>Working time</h5>
+                        <p class="skills" id="workingTime">45h</p>
+                    </div>
+                    <div class="details-section">
+                        <h5>Detail Role</h5>
+                        <p id="jobDetails">
+
+                            Ability to create direction in an ambiguous environment
+                            Passionate about solving organizational and/or key management issues.
+                            Google Scripts skills to help drive automation across team tools and resources.
+                            Experience creating dashboards (Tableau, etc.)
+
+                            Responsibilities:
+
+                            Serve as the organization's subject matter expert in the operational intelligence space
+                            Develop data based insights and reporting to provide visibility and timely information to
+                            business leaders.
+                            Use data to influence stakeholders to define and adopt appropriate processes and goals to
+                            achieve business unit objectives.</p>
+                    </div>
+                    <div class="apply-button-container">
+                        <button class="button-apply" id="redirectApply">Apply now !</button>
+                    </div>
+                </div>
+            </div>
+            <form id="form" class="apply-form">
+                <div class="input-container">
+                    <label for="company">Company</label>
+                    <input name="company" type="text" required>
+                </div>
+                <div class="input-container">
+                    <label for="title">Title</label>
+                    <input name="title" type="text" required>
+                </div>
+                <div class="input-container">
+                    <label for="place">Place</label>
+                    <input name="place" type="text" required>
+                </div>
+                <div class="input-container">
+                    <label for="wage">Wage</label>
+                    <input name="wage" type="number" required>
+                </div>
+                <div class="input-container">
+                    <label for="workingtime">Hours</label>
+                    <input name="workingtime" type="number" required>
+                </div>
+                <div class="input-container">
+                    <label for="description">Description</label>
+                    <textarea name="description" cols="10" rows="2" required></textarea>
+                </div>
+                <div class="input-container">
+                    <label for="detail_role">Details</label>
+                    <textarea name="detail_role" cols="10" rows="3" required></textarea>
+                </div>
+                <button type="submit" id="updateButton">Update</button>
+            </form>
+        </div>
+        <div class="profile-overview">
+            <div class="profile-card">
+                <div class="profile-img-container"><img src="../src/images/profile-picture.jpeg" alt="profile img"
+                        class="profile-img"></div>
+                <div class="user-titles">
+                    <h3 class="user-name" id="userName">El hombre</h3>
+                    <h5 class="user-title" id="userEmail">elHombre@hotmail.fr</h5>
+                </div>
+                <button class="edit-profile" id="deleteAccount">Delete Account</button>
+            </div>
+            <div class="profile-info-card">
+                <div class="user-status">
+                    <h5>Availability</h5>
+                    <span>Available for work</span>
+                </div>
+                <div class="user-skills">
+                    <h5>Skills & Expertise</h5>
+                    <ul class="user-skill" id="userSkills">
+                    </ul>
+                </div>
+                <button class="view-profile" id="viewProfileRedirect">View Profile</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

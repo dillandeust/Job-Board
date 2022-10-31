@@ -1,0 +1,182 @@
+POST http://localhost:8080/api/advertisements
+Content-Type: application/json
+
+{    
+     "title": "5",
+     "place": "it",
+     "wage": "500$",
+     "workingtime": "8h",
+     "description": "web developper fullstack ghdgjgdsjfdk jh hjgfgjf hjfg kjsdgjkhs kj g kjdgsfkjj k jgdskjgfkqgfkj   kj hgjq  egfsd",
+     "detail_role": "qskjhfksdh kjdhfkj hdsifsdkkj dlksjhf  hdsk fjqdslkfhdslkjhflk qsdhflkdsf f ldsfjhlkdsh lqkfsdh lkfds f lqkjhflk dlskf ds"
+   
+}
+
+###
+
+
+GET  http://localhost:8080/api/advertisements/
+
+
+###
+
+
+DELETE  http://localhost:8080/api/advertisements/
+
+
+####
+
+
+PUT http://localhost:8080/api/advertisements/1
+Content-Type: application/json
+
+{    
+     "title": "5",
+     "place": "rek",
+     "wage": "1500$",
+     "workingtime": "8h",
+     "description": "web developper fullstack",
+     "detail_role": "qskjhfksdh kjdhfkj hdsifsdkkj dlksjhf  hdsk fjqdslkfhdslkjhflk qsdhflkdsf f ldsfjhlkdsh lqkfsdh lkfds f lqkjhflk dlskf ds"
+     
+   
+}
+
+####
+
+PUT http://localhost:8080/api/advertisements/title/1
+Content-Type: application/json
+
+{
+     "title": "rien"
+}
+
+#### COMPANIES
+
+
+
+POST http://localhost:8080/api/companies
+Content-Type: application/json
+
+{    
+     "Name_of_companies": "6",
+     "field": "tech",
+     "geographical_position": "paris"
+   
+}
+
+####
+
+GET  http://localhost:8080/api/companies/1
+
+
+###
+
+
+DELETE  http://localhost:8080/api/companies/
+
+
+####
+
+PUT http://localhost:8080/api/companies/1
+Content-Type: application/json
+
+{    
+     "Name_of_companies": "1",
+     "field": "techni",
+     "geographical_position": "paris"
+   
+}
+
+####  USERS
+
+
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{    
+     "firstname":"dillan",
+     "lastname":"Addouche",
+     "email":"dillan@gmail.com",
+     "birthday":"03/10/1998",
+     "skills":"HTML,REACT,php",
+     "password":"dillandeust",
+     "password_confirm":"dillandeust",
+     "phone":"0550647025",
+     "Name_of_company": "NTES",
+     "companie":1,
+     "admin":1
+   
+}
+
+
+##### login
+
+
+POST http://localhost:8080/api/users/auth
+Content-Type: application/json
+
+{
+     "email":"hgfghfg@ghgh.com",
+     "password":"dillandeust"
+}
+
+####
+
+GET  http://localhost:8080/api/users/
+
+
+### LOGOUT
+
+POST  http://localhost:8080/api/users/out/2
+Content-Type: application/json
+
+
+###
+
+DELETE  http://localhost:8080/api/users/
+
+
+
+###
+
+
+PUT  http://localhost:8080/api/users/1
+Content-Type: application/json
+
+{
+
+    "firstname":"nicola",
+     "lastname":"lam",
+     "email":"hgfghfg@ghgh.com",
+     "birthday":"0124143",
+     "password":"ddddddddd",
+     "phone":"0550647025",
+     "skills": "css, html"
+}
+
+
+
+###
+
+
+PUT  http://localhost:8080/api/users/updatepassword/1
+Content-Type: application/json
+
+{
+"lpassword":"dillandeus",
+"password": "dillandeust",
+"password_confirm": "dillandeust"
+
+}
+
+####
+
+GET  http://localhost:8080/api/users/company/3
+
+
+### apply 
+
+GET http://localhost:8080/api/applyings/
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./JS/register.js" defer></script>
+    <title>Need Jobs</title>
+</head>
+<body>
+    <main>
+        <h1 class="title">Need Jobs</h1>
+        <form id="form" class="apply-form">
+            <div class="input-container">
+                <label for="firstname">First Name</label>
+                <input name="firstname" type="text">
+            </div>
+            <div class="input-container">
+                <label for="lastname">Last Name</label>
+                <input name="lastname" type="text">
+            </div>
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input name="email" type="email">
+            </div>
+            <div class="input-container">
+                <label for="birthday">Date Of Birth</label>
+                <input name="birthday" type="text">
+            </div>
+            <div class="input-container">
+                <label for="phone">Phone number</label>
+                <input name="phone" type="text">
+            </div>
+            <div class="input-container">
+                <label for="skills">Skills</label>
+                <input name="skills" type="text">
+            </div>
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input name="password" type="password">
+            </div>
+            <div class="input-container">
+                <label for="password_confirm">Password</label>
+                <input name="password_confirm" type="password">
+            </div>
+            <div class="input-container">
+                <label for="companie">Company</label>
+                <input id="checkboxCompany" name="companie" type="checkbox">
+            </div>
+            <div class="closed" id="companyNameContainer">
+                <label for="Name_of_company">Company Name</label>
+                <input id="companyName" name="Name_of_company" type="text">
+            </div>
+            <button type="submit">Register</button>
+            <button class="login" id="redirectLogin">Already have an account ?</button>
+        </form>
+    </main>
+</body>
+</html>

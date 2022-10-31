@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/profile.css">
+    <script src="../JS/userprofile.js" defer></script>
+    <title>Need Jobs</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <ul class="navigation">
+                <li><button id="redirectHome">Need Jobs</button></li>
+                <li>
+                    <img src="../src/icons/logout-icon.png" alt="logout icon" class="logout-icon" id="logout">
+                    <div class="profile-image">
+                        <img src="../src/images/profile-picture.jpeg" alt="Profile image">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="userData" class="apply-form">
+            <img src="../src/images/profile-picture.jpeg" alt="profile-picture" class="pdprofile">
+            <div class="input-container">
+                <label for="firstname">First Name</label>
+                <p id="firstName"></p>
+            </div>
+            <div class="input-container">
+                <label for="lastname">Last Name</label>
+                <p id="lastName"></p>
+            </div>
+            <div class="input-container">
+                <label for="email">Email</label>
+                <p id="email"></p>
+            </div>
+            <div class="input-container">
+                <label for="birthday">Date Of Birth</label>
+                <p id="birthday"></p>
+            </div>
+            <div class="input-container">
+                <label for="phone">Phone number</label>
+                <p id="phoneNumber"></p>
+            </div>
+            <div class="input-container">
+                <label for="skills">Skills</label>
+                <p id="skills"></p>
+            </div>
+            <button type="button" id="editBtn">Edit</button>
+        </div>
+        <div class="update-container" id="updateForm">
+            <img src="../src/icons/back-icon.png" alt="arrow back" id="redirectProfile">
+            <form id="form" class="apply-form update">
+                <div class="input-container">
+                    <label for="firstname">First Name</label>
+                    <input name="firstname" type="text" id="firstNameUpdate">
+                </div>
+                <div class="input-container">
+                    <label for="lastname">Last Name</label>
+                    <input name="lastname" type="text" id="lastNameUpdate">
+                </div>
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input name="email" type="email" id="emailUpdate">
+                </div>
+                <div class="input-container">
+                    <label for="birthday">Data Of Birth</label>
+                    <input name="birthday" type="text" id="birthdayUpdate">
+                </div>
+                <div class="input-container">
+                    <label for="phone">Phone number</label>
+                    <input name="phone" type="text" id="phoneUpdate">
+                </div>
+                <div class="input-container">
+                    <label for="skills">Skills</label>
+                    <input name="skills" type="text" id="skillsUpdate">
+                </div>
+                <button type="submit">Update</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

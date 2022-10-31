@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/advertisment.js" type="module" defer></script>
+    <link rel="stylesheet" href="../css/apply.css">
+    <title>Need Jobs</title>
+</head>
+
+<body>
+     <header id="header">
+        <nav class="navbar">
+            <ul class="navigation">
+            <li><button id="redirectHome">Need Jobs</button></li>
+                <li>
+                    <button class="profile-button">Profile</button>
+                    </li>
+            </ul>
+            </nav>
+    </header>
+    <main>
+        <form id="form" class="apply-form">
+            <div class="input-container">
+                <label for="company">Company</label>
+                <input name="company" type="text">
+            </div>
+            <div class="input-container">
+                <label for="title">Title</label>
+                <input name="title" type="text">
+            </div>
+            <div class="input-container">
+                <label for="place">Place</label>
+                <input name="place" type="text">
+            </div>
+            <div class="input-container">
+                <label for="wage">Wage</label>
+                <input name="wage" type="number">
+            </div>
+            <div class="input-container">
+                <label for="workingtime">Hours</label>
+                <input name="workingtime" type="number">
+            </div>
+            <div class="input-container">
+                <label for="description">Description</label>
+                <textarea name="description" cols="30" rows="2"></textarea>
+            </div>
+            <div class="input-container">
+                <label for="detail_role">Details</label>
+                <textarea name="detail_role" cols="30" rows="3"></textarea>
+            </div>
+            <button type="submit" id="redirecAdd">Add Job</button>
+        </form>
+    </main>
+</body>
+
+</html>
